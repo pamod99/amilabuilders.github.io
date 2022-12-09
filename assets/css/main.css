@@ -1,33 +1,4 @@
-/*  =====================================================
-    Table of Contets
-    =====================================================
-
-    01 Common Styles
-    02 Header Section
-    03 Page Header
-    04 Hero Section
-    05 About Section
-    06 Service Section
-    07 Project Section
-    08 Team Section
-    09 Skills Section
-    10 Testimonial Section
-    11 Working Process
-    12 Cta Section
-    13 Info Section
-    14 Faq Section
-    15 Content Section
-    16 Pricing Section
-    17 Contact Section
-    18 Sponsor Section
-	19 Blog Section
-	20 Footer Section
-
-    =====================================================
-    @DynamicLayers
-    ===================================================== */
-
-	@import url('https://fonts.googleapis.com/css2?family=Roboto&amp;family=Teko:wght@400;500;600&amp;family=Work+Sans:wght@400;600&amp;display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&amp;family=Teko:wght@400;500;600&amp;family=Work+Sans:wght@400;600&amp;display=swap');
 
 /*  ======= Common Styles ======= */
 *{
