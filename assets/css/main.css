@@ -574,7 +574,7 @@ a,a:hover, img, .form-control,  .form-control:hover, button{
     display: block;
     border-bottom: 4px solid #89C040;
 }
-.header-logo img{ max-width: 35%; }
+.header-logo img{ max-width: 85%; }
 .sticky-header{
     background-color: #051441;
     width: 100%;
