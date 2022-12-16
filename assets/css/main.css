@@ -2357,10 +2357,14 @@ a,a:hover, img, .form-control,  .form-control:hover, button{
     width: 100%;
     height: 100%;
 }
+.contact-details{
+    display: flex;
+}
 .contact-section .contact-details li{
     display: flex;
     align-items: center;
     margin-bottom: 20px;
+    margin-left: 40px;
 }
 .contact-section .contact-details li i{
     color: #fff;
