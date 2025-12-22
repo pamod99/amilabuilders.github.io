@@ -28,9 +28,35 @@
     <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 
     <style>
-        .service-box {
-            height: 100%; /* Ensure equal height */
+        /* Force the row to be a flex container (usually default in bootstrap, but ensuring it wraps correctly) */
+        .row.d-flex {
+            display: flex;
+            flex-wrap: wrap;
         }
+        
+        /* Make the column flex so the child stretches */
+        .col-lg-4 {
+            display: flex;
+            align-items: stretch;
+        }
+
+        /* Make the service box fill the column height */
+        .service-box {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            background: #fff; /* Ensure background is white if it has a shadow/border */
+        }
+
+        /* Make the content area grow to fill space */
+        .service-content {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Style the list */
         .service-details-list {
             text-align: left;
             margin-top: 15px;
@@ -38,12 +64,11 @@
             list-style-type: disc;
             color: #777;
             font-size: 14px;
+            margin-bottom: 0; /* Remove extra margin at bottom */
         }
         .service-details-list li {
             margin-bottom: 5px;
         }
-        /* Hide the generic images if you prefer a text-only clean look, 
-           otherwise keep them. I have kept them visible below. */
     </style>
 </head>
 
@@ -116,6 +141,7 @@
             </div>
         </div>
     </header>
+
     <div id="dl-popup-search-box">
         <div class="box-inner-wrap d-flex align-items-center">
             <form id="form" action="#" method="get" role="search">
@@ -138,7 +164,7 @@
 
     <section class="service-section padding bg-grey">
         <div class="container">
-            <div class="row">
+            <div class="row d-flex">
 
                 <div class="col-lg-4 col-md-6 sm-padding wow fadeInUp" data-wow-delay="200ms">
                     <div class="service-box">
@@ -324,6 +350,7 @@
             </div>
         </div>
     </section>
+
     <footer class="footer-section">
         <div class="footer-top">
             <div class="footer-bg">
@@ -369,6 +396,7 @@
             </div>
         </div>
     </footer>
+
     <div id="scrollup">
         <button id="scroll-top" class="scroll-to-top"><i class="las la-arrow-up"></i></button>
     </div>
